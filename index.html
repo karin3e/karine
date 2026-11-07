@@ -1,147 +1,108 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Karine Vitória</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Portfólio profissional de Karine Vitória Sousa — estudante de Análise e Desenvolvimento de Sistemas. Formação, projetos, liderança e competências.">
+  <title>Karine Vitória Sousa | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="logo">karine.vitoria</div>
-      <button id="navToggle" class="nav-toggle">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Karine Vitória, início"><span class="brand-mark">K</span><span>karine<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="mainNav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a><a href="#formacao">Formação</a><a href="#trajetoria">Trajetória</a><a href="#projetos">Projetos</a><a href="#competencias">Competências</a><a href="#certificados">Certificados</a>
+      <a class="nav-contact" href="#contato">Contato <span aria-hidden="true">↗</span></a>
+    </nav>
   </header>
-  <nav class="nav-menu" id="nav-menu">
-    <ul>
-      <li><a href="biografia.html">BIOGRAFIA
 
-      </a></li>
-    </ul>
-  </nav>
-
-  <section class="hero">
-    <div class="hero-inner">
-      <p class="kicker">OLA PESSOAL</p>
-      <h1>Eu sou Karine,</h1>
-      <h2>Aprendiz de Front-ened.</h2>
-
-      <a href="#contato" class="btn-outline">FALE COMIGO</a>
-    </div>
-
-    <div class="hero-visual">
-      <div class="circle"></div>
-
-      <!-- Moldura da foto -->
-      <div class="photo-frame">
-        <img src="copiaperfil.jpg" alt="Minha foto">
+  <main id="conteudo">
+    <section class="hero section-wrap" id="inicio">
+      <div class="hero-content">
+        <div class="status"><span class="status-dot"></span> PORTFÓLIO PROFISSIONAL <span class="status-line"></span> 2026</div>
+        <p class="hero-kicker">Olá, eu sou</p>
+        <h1>Karine Vitória<br><span>Sousa.</span></h1>
+        <p class="hero-role">Estudante de Análise e Desenvolvimento de Sistemas</p>
+        <p class="hero-summary">Em formação, com interesse em tecnologia, facilidade para aprender e vontade de transformar ideias em soluções.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost" href="https://karin3e.github.io/confortystudy/" target="_blank" rel="noopener noreferrer">Ver meu projeto <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta"><span><i class="meta-icon">⌖</i> Acauã, Piauí</span><span><i class="meta-icon">✦</i> Em busca do primeiro emprego</span></div>
       </div>
-    </div>
-  </section>
-
-  <!-- SOBRE MIM -->
-  <section class="panel">
-    <h2>Sobre mim</h2>
-    <p>
-      Meu nome é Karine Vitoria Sousa, 
-      tenho 16 anos e nasci em Paulistana,
-       mas minha moradia
-      fica sediada no interior de Acauã.
-       Atualmente, estudo no CETI Antonio Rodrigues Filho,
-      na Segunda série, turma A,
-       e estou cursando desenvolvimento de sistemas.
-    </p>
-  </section>
-
-  <!-- CONHECIMENTOS -->
-  <section id="conhecimentos">
-    <h2 class="shine-title">CONHECIMENTOS</h2>
-     <div class="knowledge-card">
-    <div class="knowledge-card">
-    <div class="knowledge-container">
-        <div class="knowledge-card"><img src="html.jpeg" alt="HTML"></div>
-        <h3>HTML</h3>
-        <p>Tenho conhecimentos básicos sobre HTML e estruturação.</p>
+      <div class="hero-visual">
+        <div class="photo-orbit orbit-one"></div><div class="photo-orbit orbit-two"></div>
+        <div class="photo-frame"><img src="foto-karine-2026.jpeg" alt="Foto atual de Karine Vitória Sousa"></div>
+        <div class="photo-caption"><span class="caption-star">✳</span><span><strong>Karine Vitória Sousa</strong><small>Portfólio · 2026</small></span></div>
+        <div class="floating-note"><span class="note-icon">✦</span><span><strong>Aprender.</strong><small>Construir. Evoluir.</small></span></div>
       </div>
-      
-        <div class="knowledge-card"><img src="css.jpeg" alt="CSS"></div>
-        <h3>CSS</h3>
-        <p>Básico utilizando cores, estilização e layouts.</p>
+      <a class="scroll-cue" href="#sobre"><span></span> Role para conhecer</a>
+    </section>
+
+    <section class="section-wrap section" id="sobre">
+      <div class="section-heading"><p class="eyebrow">01 / APRESENTAÇÃO</p><h2>Sobre <em>mim</em></h2></div>
+      <div class="about-layout">
+        <div class="about-lead"><span class="quote-mark">“</span><p>Estou construindo minha trajetória profissional com curiosidade, dedicação e disposição para aprender.</p></div>
+        <div class="about-copy"><p>Sou estudante da 3ª série do Ensino Médio no <strong>CETI Antônio Rodrigues Filho</strong>, em Acauã–PI, e estou concluindo junto a ele a formação técnica em <strong>Análise e Desenvolvimento de Sistemas</strong>, com previsão de conclusão em 2026.</p><p>Ao longo da minha trajetória escolar, desenvolvi habilidades de comunicação, organização e liderança. Também tive a oportunidade de atuar como presidente do Grêmio Estudantil e como monitora escolar.</p><p>Busco minha primeira oportunidade profissional, na qual eu possa contribuir com responsabilidade, aprender com a equipe e ampliar meus conhecimentos.</p><div class="objective"><span class="objective-icon">◎</span><span><small>OBJETIVO PROFISSIONAL</small><strong>Conquistar meu primeiro emprego e crescer profissionalmente.</strong></span></div></div>
       </div>
+    </section>
 
-    
-        <div class="knowledge-card"><img src="js.jpeg" alt="JavaScript"></div>
-        <h3>JavaScript</h3>
-        <p>Noção sobre básicas interações em JS.</p>
+    <section class="section-wrap section section-alt" id="formacao">
+      <div class="section-heading"><p class="eyebrow">02 / TRAJETÓRIA ACADÊMICA</p><h2>Formação em <em>andamento</em></h2><p class="section-intro">Uma base que une ensino médio e preparação técnica para o mundo da tecnologia.</p></div>
+      <div class="education-grid">
+        <article class="education-card"><div class="card-topline"><span class="card-icon">01</span><span class="pill pill-live"><i></i> Em andamento</span></div><p class="card-label">ENSINO MÉDIO</p><h3>3ª série · Turma A</h3><p class="card-school">CETI Antônio Rodrigues Filho</p><div class="card-footer"><span>Acauã · Piauí</span><strong>Conclusão prevista: 2026</strong></div></article>
+        <article class="education-card featured"><div class="card-topline"><span class="card-icon">02</span><span class="pill pill-live"><i></i> Em andamento</span></div><p class="card-label">FORMAÇÃO TÉCNICA</p><h3>Análise e Desenvolvimento de Sistemas</h3><p class="card-school">CETI Antônio Rodrigues Filho</p><div class="card-footer"><span>Ensino Médio Técnico</span><strong>Conclusão prevista: 2026</strong></div></article>
       </div>
-    </div>
-  </section>
+      <p class="disclaimer">As duas formações estão em fase de conclusão e serão atualizadas após a emissão dos documentos finais.</p>
+    </section>
 
-  <!-- HOBBYS -->
-  <section id="hobbys">
-    <h2 class="shine-title">MEUS HOBBYS</h2>
-
-    <div class="hobbys-card">
-      <div class="hobby-card">
-        <div class="card-media frame"><img src="esporte.jpeg" alt="Esportes"></div>
-        <h3>Esportes</h3>
-        <p>
-          Adoro jogar bola e correr, mas não sei muito bem, costumo dizer que sempre estou aprendendo.
-          Jogo em alguns times da minha cidade, e sempre estou disposta a dar o meu melhor.
-        </p>
+    <section class="section-wrap section" id="trajetoria">
+      <div class="section-heading"><p class="eyebrow">03 / EXPERIÊNCIA E PARTICIPAÇÃO</p><h2>Minha <em>trajetória</em></h2><p class="section-intro">Experiências que fortaleceram minha responsabilidade, iniciativa e capacidade de trabalhar com pessoas.</p></div>
+      <div class="experience-list">
+        <article class="experience-item"><div class="experience-date"><span>ABR 2026</span><b>—</b><span>DEZ 2026</span></div><div class="experience-marker"><i></i></div><div class="experience-content"><span class="experience-type">ATUAÇÃO ESCOLAR</span><h3>Monitora escolar</h3><p class="muted">CETI Antônio Rodrigues Filho</p><p>Selecionada em abril de 2026 para atuar como monitora durante o ano letivo, colaborando com as atividades e a rotina do ambiente escolar.</p></div></article>
+        <article class="experience-item"><div class="experience-date"><span>JUN 2025</span><b>—</b><span>JUN 2026</span></div><div class="experience-marker"><i></i></div><div class="experience-content"><span class="experience-type">LIDERANÇA ESTUDANTIL</span><h3>Presidente do Grêmio Estudantil</h3><p class="muted">CETI Antônio Rodrigues Filho</p><p>Atuação na representação dos estudantes, organização de iniciativas e participação na comunidade escolar, desenvolvendo liderança, diálogo e trabalho em equipe.</p></div></article>
       </div>
+      <div class="experience-note"><span>✦</span><p>Estou em busca da minha primeira experiência profissional formal e tenho disposição para aprender, receber orientações e assumir novos desafios.</p></div>
+    </section>
 
-      <div class="hobby-card">
-        <div class="card-media frame"><img src="musica.jpeg" alt="Ouvir música"></div>
-        <h3>Ouvir música</h3>
-        <p>
-          Sempre costumo manter a música presente em minhas atividades, ela me acalma
-          e se tornou minha grande companheira.
-        </p>
+    <section class="section-wrap section project-section" id="projetos">
+      <div class="section-heading"><p class="eyebrow">04 / TECNOLOGIA NA PRÁTICA</p><h2>Ideias que viram <em>projetos</em></h2></div>
+      <article class="project-feature">
+        <div class="project-art" aria-hidden="true"><div class="project-window"><div class="window-bar"><i></i><i></i><i></i><span>comfortstudy</span></div><div class="mock-layout"><div class="mock-sidebar"><b></b><i></i><i></i><i></i><i></i></div><div class="mock-main"><b></b><div class="mock-cards"><i></i><i></i><i></i></div><div class="mock-panel"></div></div></div></div><span class="art-orbit"></span><span class="art-label">PROJETO AUTORAL</span></div>
+        <div class="project-info"><span class="project-index">PROJETO EM DESTAQUE · 2026</span><h3>ComfortStudy</h3><p>Plataforma digital criada para apoiar a organização da rotina acadêmica dos estudantes. O projeto reúne recursos como tarefas, provas, calendário, acompanhamento dos estudos e organização de conteúdos por disciplina.</p><div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="btn btn-primary" href="https://karin3e.github.io/confortystudy/" target="_blank" rel="noopener noreferrer">Conhecer o ComfortStudy <span>↗</span></a></div>
+      </article>
+    </section>
+
+    <section class="section-wrap section section-alt" id="competencias">
+      <div class="section-heading"><p class="eyebrow">05 / O QUE POSSO OFERECER</p><h2>Conhecimentos & <em>competências</em></h2></div>
+      <div class="skills-grid"><article class="skill-card"><div class="skill-heading"><span class="skill-number">01</span><h3>Conhecimentos técnicos</h3></div><p class="muted">Conhecimentos introdutórios e em desenvolvimento.</p><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article><article class="skill-card"><div class="skill-heading"><span class="skill-number">02</span><h3>Competências pessoais</h3></div><ul class="skill-list"><li>Comunicação e relacionamento interpessoal</li><li>Liderança e trabalho em equipe</li><li>Organização e responsabilidade</li><li>Criatividade e iniciativa</li><li>Facilidade de aprendizagem e adaptação</li></ul></article></div>
+    </section>
+
+    <section class="section-wrap section" id="certificados">
+      <div class="section-heading"><p class="eyebrow">06 / FORMAÇÃO COMPLEMENTAR</p><h2>Cursos & <em>certificados</em></h2><p class="section-intro">Cursos livres concluídos com aproveitamento de 100%, conforme os certificados apresentados.</p></div>
+      <div class="hours-banner"><div><strong>584</strong><span>horas de formação complementar</span></div><p>Grupo Educacional Realiza Brasil</p></div>
+      <div class="course-grid">
+        <article class="course-card"><span class="course-hours">140 HORAS</span><h3>Atendente de Farmácias e Drogarias e Recepcionista de Clínicas e Hospitais</h3><a href="documentos/documento-3214.jpeg" target="_blank" rel="noopener">Ver certificado ↗</a></article>
+        <article class="course-card"><span class="course-hours">140 HORAS</span><h3>Auxiliar Administrativo e Conhecimentos Bancários</h3><a href="documentos/documento-3213.jpeg" target="_blank" rel="noopener">Ver certificado ↗</a></article>
+        <article class="course-card"><span class="course-hours">120 HORAS</span><h3>Atendimento ao Cliente e Operador de Caixa</h3><a href="documentos/documento-3212.jpeg" target="_blank" rel="noopener">Ver certificado ↗</a></article>
+        <article class="course-card"><span class="course-hours">44 HORAS</span><h3>Informática Básica</h3><a href="documentos/documento-3211.jpeg" target="_blank" rel="noopener">Ver certificado ↗</a></article>
+        <article class="course-card"><span class="course-hours">140 HORAS</span><h3>Agente Comunitário de Saúde (ACS) e Monitor Escolar</h3><a href="documentos/documento-3210.jpeg" target="_blank" rel="noopener">Ver certificado ↗</a></article>
       </div>
+      <div class="recommendations"><div><span class="eyebrow">DOCUMENTOS COMPLEMENTARES</span><h3>Recomendações profissionais</h3><p>Cartas recebidas do Grupo Educacional Realiza Brasil.</p></div><div class="recommendation-links"><a href="documentos/documento-3209.jpeg" target="_blank" rel="noopener">Carta de recomendação profissional ↗</a><a href="documentos/documento-3208.jpeg" target="_blank" rel="noopener">Carta de estágio ↗</a></div></div>
+    </section>
 
-      <div class="hobby-card">
-        <div class="card-media frame"><img src="fotobanda.jpeg" alt="Banda Marcial"></div>
-        <h3>Banda Marcial</h3>
-        <p>
-          Toco o instrumento chamado surdo, tenho pouco tempo de banda e sou extremamente apaixonada.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section class="panel dark-panel" id="contato">
-    <h2>Fale comigo!</h2>
-
-    <div class="contact-list">
-      <div class="contact-item">
-        <span class="icon"></span>
-        <p>karinevitoriasousa6@gmail.com</p>
-        <p>(89)994214649</p>
-      </div>
-
-      <div class="contact-item"> <a href="https://www.instagram.com/karine.sz_?igsh=MWF4ZWhvM3pxcDY2Zw==" target="_blank">@karine.sz_</a>
-        <span class="icon"></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- FLOATING BUTTONS -->
-  <div class="floating">
-    <button id="themeToggle" class="theme-toggle">
-      <span class="dot"></span>
-    </button>
-
-    <button id="scrollTop" class="scroll-top">↑</button>
-  </div>
-
+    <section class="section-wrap contact-section" id="contato">
+      <div class="contact-glow"></div><div class="contact-copy"><p class="eyebrow">07 / CONTATO</p><h2>Vamos construir<br><em>novas oportunidades.</em></h2><p>Estou disponível para oportunidades de primeiro emprego e pronta para aprender, colaborar e crescer profissionalmente.</p></div>
+      <div class="contact-card"><span class="contact-label">FALE COMIGO</span><a href="mailto:karinevitoriasousa6@gmail.com"><span class="contact-icon">✉</span><span>karinevitoriasousa6@gmail.com</span><b>↗</b></a><a href="tel:+5589994214649"><span class="contact-icon">⌕</span><span>(89) 99421-4649</span><b>↗</b></a><a href="https://www.instagram.com/karine.sz_/" target="_blank" rel="noopener noreferrer"><span class="contact-icon">◎</span><span>@karine.sz_</span><b>↗</b></a></div>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand" href="#inicio"><span class="brand-mark">K</span><span>karine<span class="brand-dot">.</span></span></a><p>© 2026 Karine Vitória Sousa · Portfólio profissional</p><a href="#inicio" class="back-top">Voltar ao topo ↑</a></footer>
   <script src="script.js"></script>
 </body>
 </html>
