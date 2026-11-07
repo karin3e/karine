@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia - Karine Vitória</title>
+
+    <!-- Fonte moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- CSS separado -->
+    <link rel="stylesheet" href="biografia.css">
+
+</head>
+
+<body>
+    <h1>BIOGRAFIA</h1>
+    <h2 class="typewriter">A história que me trouxe até aqui.</h2>
+
+    <div class="bio-container">
+
+        <div class="neon-card reveal">
+            Meu nome é <strong>Karine Vitória Sousa</strong>. Nasci em Paulistana – PI, mas cresci em Acauã, no interior, na casa da minha avó. 
+            Fui criada por três mulheres incríveis — minha mãe, minha vó e minha tia — que me ensinaram força, coragem e amor. 
+            Não tive a presença paterna, mas nunca faltou carinho dentro de casa. Moro com minha irmã e, apesar de ter poucos amigos, 
+            eles são muito importantes para mim.
+        </div>
+        
+
+        <div class="neon-card reveal">
+            Nasci em 14 de fevereiro de 2009. No meu primeiro ano de vida, minha mãe não pôde cuidar de mim, e foi então que minha tia e minha avó 
+            assumiram esse papel com todo o amor do mundo.
+        </div>
+
+        <div class="neon-card reveal">
+            Comecei na escola com 5 anos, e sempre fui reconhecida como uma boa aluna — nunca repeti e nunca fiquei de recuperação. 
+            Também ganhei destaque como jogadora de futebol, algo que marcou minha infância e continua fazendo parte da minha vida.
+        </div>
+
+        <div class="neon-card reveal">
+            A adolescência chegou trazendo uma fase turbulenta, cheia de conflitos internos e descobertas. Aos 15 anos, tive um momento muito 
+            importante na minha vida: me assumir para a minha família. No começo, não fui aceita, e isso doeu muito. Mas aprendi a conviver 
+            com essa realidade e a entender o motivo do desgosto, ainda que seja difícil. Mesmo assim, sigo firme sendo quem eu sou.
+        </div>
+        <div class="neon-card reveal">
+            Durante todo esse processo, sempre busquei apoio na fé. Minha fé católica é muito forte e me guia todos os dias.
+        </div>
+
+        <div class="neon-card reveal">
+            Hoje, curso o <strong>2º ano do Ensino Médio</strong>, sou <strong>presidente do Grêmio Estudantil</strong>, 
+            e estou começando minha caminhada na tecnologia, com pouca experiência em front-end, mas com muita vontade de aprender e evoluir. 
+            Também jogo no time <strong>Veteranas</strong>, em Acauã, onde sigo crescendo como atleta e como pessoa.
+        </div>
+
+        <div class="neon-card reveal">
+            Meu sonho é me formar em <strong>Odontologia</strong> e poder retribuir todo o amor e esforço de quem me criou, dando muito orgulho para minha família 
+            e mostrando que cada etapa da minha história valeu a pena.
+        </div>
+
+    </div>
+
+    <script>
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll(".reveal");
+
+            reveals.forEach(rev => {
+                let windowHeight = window.innerHeight;
+                let elementTop = rev.getBoundingClientRect().top;
+                let visiblePoint = 130;
+
+                if (elementTop < windowHeight - visiblePoint) {
+                    rev.classList.add("active");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+    </script>
+
+</body>
+</html>

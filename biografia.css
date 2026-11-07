@@ -1,0 +1,106 @@
+body {
+    background: #0b0f12;
+    color: #e9eef3;
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Título */
+h1 {
+    color: #1ea0ff;
+    font-size: 52px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+/* Máquina de escrever */
+.typewriter {
+    width: fit-content;
+    margin: 0 auto 40px auto;
+    color: #b4bdc4;
+    font-size: 20px;
+    font-weight: 300;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #1ea0ff;
+    animation: typing 3s steps(40), blink .7s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.bio-container {
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Card com borda neon animada */
+.neon-card {
+    padding: 25px;
+    border-radius: 14px;
+    line-height: 1.7;
+    font-size: 18px;
+    background: rgba(255,255,255,0.02);
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(6px);
+}
+
+.neon-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    padding: 1.5px;
+    background: linear-gradient(120deg, #1ea0ff, #0a66a3, #1ea0ff);
+    background-size: 300% 300%;
+    animation: neonMove 4s infinite linear;
+    -webkit-mask: 
+        linear-gradient(#000 0 0) content-box, 
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+}
+
+@keyframes neonMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Imagem moderna */
+.bio-img {
+    width: 330px;
+    margin: auto;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    transition: transform .5s ease, opacity .5s ease, filter .5s ease;
+}
+
+/* Animação forte: fade + slide + blur */
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    filter: blur(12px);
+    transition: all 1.1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}

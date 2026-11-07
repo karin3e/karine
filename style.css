@@ -1,0 +1,510 @@
+:root {
+  --bg:#0b0f12;
+  --panel:#0f1112;
+  --panel-2:#141617;
+  --text:#e9eef3;
+  --muted:#b4bdc4;
+  --accent:#0a66a3;
+  --accent-strong:#1ea0ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* HEADER */
+.site-header {
+  width: 100%;
+  padding: 20px 30px;
+  background: var(--panel);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: var(--text);
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-inner h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero-inner h2 {
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+.btn-outline {
+  display: inline-block;
+  margin-top: 20px;
+  border: 2px solid var(--accent);
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* MOLDURAS */
+.profile-photo-placeholder {
+  width: 260px;
+  height: 300px;
+  border: 3px dashed var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.hero-photo {
+  width: 300px;
+  height: 320px;
+}
+
+.hobby-photo {
+  width: 100%;
+  height: 220px;
+}
+
+/* SEÇÕES */
+.panel {
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dark-panel {
+  background: var(--panel-2);
+  border-radius: 16px;
+}
+
+.cards {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+}
+
+.card {
+  padding: 20px;
+  background: var(--panel);
+  border-radius: 12px;
+}
+
+/* CONTATO */
+.contact-item {
+  margin: 10px 0;
+}
+
+.contact-item a {
+  color: var(--accent-strong);
+  text-decoration: none;
+}
+
+/* FLOAT BUTTONS */
+.floating {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.theme-toggle,
+.scroll-top {
+  padding: 12px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* ------------------------------ */
+/* Container dos conhecimentos    */
+/* ------------------------------ */
+
+
+.knowledge-container {
+    display: flex;
+    flex-direction: column;   /* UM ABAIXO DO OUTRO */
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+}
+
+/* ------------------------------ */
+/* Botões de conhecimentos        */
+/* ------------------------------ */
+.knowledge-card {
+    width: 260px;
+    padding: 15px;
+    background: #94c1f5;
+    border: 2px solid #6fa6e4;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* remover estilo de botão */
+.knowledge-card {
+    border: none;
+    outline: none;
+}
+
+/* Hover: botão sobe e brilha */
+.knowledge-card:hover {
+    transform: scale(1.05);
+    background: #8bb8e9;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15)
+}
+
+/* Card padrão */
+.knowledge-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    background: var(--panel);
+    padding: 15px;
+    border-radius: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Efeito ao passar o mouse */
+.knowledge-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Efeito ao clicar */
+.knowledge-card:active {
+    transform: scale(0.96);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3) inset;
+}
+
+/* Imagens alinhadas do mesmo tamanho */
+.knowledge-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #0a355a;
+}
+
+
+
+
+/* ------------------------------ */
+/* Layout geral: um abaixo do outro */
+/* ------------------------------ */
+
+
+
+section {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+
+/* ------------------------------ */
+/* Container dos hobbys           */
+/* ------------------------------ */
+.hobby-container {
+    display: flex;
+    flex-direction: column;   /* UM ABAIXO DO OUTRO */
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+}
+
+/* ------------------------------ */
+/* Botões de hobby                */
+/* ------------------------------ */
+.hobby-card {
+    width: 260px;
+    padding: 15px;
+    background: #94c1f5;
+    border: 2px solid #6fa6e4;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* remover estilo de botão */
+.hobby-card {
+    border: none;
+    outline: none;
+}
+
+/* Hover: botão sobe e brilha */
+.hobby-card:hover {
+    transform: scale(1.05);
+    background: #8bb8e9;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15)
+}
+
+/* Card padrão */
+.hobby-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    background: var(--panel);
+    padding: 15px;
+    border-radius: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Efeito ao passar o mouse */
+.hobby-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Efeito ao clicar */
+.hobby-card:active {
+    transform: scale(0.96);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3) inset;
+}
+
+/* Imagens alinhadas do mesmo tamanho */
+.hobby-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #0a355a;
+}
+
+
+
+.shine-title {
+  position: relative;
+  font-size: 3.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--accent-strong);
+  text-align: center;
+  margin: 100px 0 50px;
+  opacity: 0;
+  transform: translateY(40px) scale(0.8);
+  transition: 1s ease;
+}
+
+/* Quando entra na tela */
+.shine-title.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Brilho que passa */
+.shine-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+}
+
+/* animação do brilho */
+.shine-title.show::after {
+  animation: shine 1.3s forwards 0.3s;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+
+.nav-menu {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background: var(--panel);
+  padding: 20px;
+  border-radius: 12px;
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 0 20px #0007;
+}
+
+.nav-menu.open {
+  display: flex;
+}
+
+.nav-menu a {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.nav-menu a:hover {
+  color: var(--accent-strong);
+}
+
+/* MENU FECHADO */
+.nav-menu {
+  display: none;
+  background: #0f1112;
+  padding: 20px;
+}
+
+/* MENU ABERTO */
+.nav-menu.open {
+  display: block;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 10px 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* ==== MENU MODERNO === */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -300px; 
+  width: 260px;
+  height: 100vh;
+  background: rgba(15, 17, 18, 0.8);
+  backdrop-filter: blur(15px);
+  box-shadow: -3px 0 20px rgba(0,0,0,0.4);
+  padding-top: 100px;
+  transition: right 0.4s ease;
+  z-index: 9999;
+}
+
+.nav-menu.open {
+  right: 0;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding-left: 40px;
+}
+
+.nav-menu a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: var(--accent-strong);
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: var(--accent-strong);
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+/* ==== BOTÃO HAMBÚRGUER ==== */
+.nav-toggle span {
+  background: var(--text);
+  height: 3px;
+  width: 28px;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: 0.4s;
+}
